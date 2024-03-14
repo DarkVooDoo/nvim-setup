@@ -8,13 +8,14 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
   -- Replace the language servers listed here
   -- with the ones you want to install
-  ensure_installed = {"gopls", "tsserver", "html", "biome", "cssls", "yamlls"},
+  ensure_installed = {"gopls", "golangci_lint_ls", "tsserver", "html", "biome", "cssls", "yamlls"},
   handlers = {
     lsp_zero.default_setup,
   }
 })
 
 local cmp = require('cmp')
+local cmp_action = require('lsp-zero').cmp_action()
 
 cmp.setup({
 	preselect = 'item',
@@ -23,6 +24,9 @@ cmp.setup({
 	},
 	mapping = cmp.mapping.preset.insert({
 		['<CR>'] = cmp.mapping.confirm({select = false}),
+        ['<Tab>'] = cmp_action.tab_complete(),
+        ['<S-Tab>'] = cmp_action.select_prev_or_fallback(),
+
 	}),
 })
 
