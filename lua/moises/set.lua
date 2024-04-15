@@ -12,7 +12,18 @@ vim.opt.autoindent = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 10
 
 vim.opt.colorcolumn = "130"
 
+vim.opt.clipboard = "unnamedplus"
+
+vim.g.lightline = {
+    colorscheme = 'wombat'
+    -- in lua, the above line is syntactic sugar for:
+    -- ['colorscheme'] = 'catppuccin'
+    -- this may be helpful if the option name has a reserved symbol in it like + or -
+    -- ['key-here'] = 'value'
+}
+
+vim.cmd.colorscheme("solarized-osaka")
