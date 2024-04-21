@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\moise\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "C:\\Users\\moise\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\moise\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -134,10 +139,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\moise\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["vim-gitgutter"] = {
+  ["vim-fugitive"] = {
     loaded = true,
-    path = "C:\\Users\\moise\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-gitgutter",
-    url = "https://github.com/airblade/vim-gitgutter"
+    path = "C:\\Users\\moise\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   }
 }
 

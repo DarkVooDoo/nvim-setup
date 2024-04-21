@@ -19,8 +19,14 @@ vim.opt.colorcolumn = "130"
 vim.opt.clipboard = "unnamedplus"
 
 vim.g.lightline = {
-    colorscheme = 'wombat'
-    -- in lua, the above line is syntactic sugar for:
+    colorscheme = 'wombat',
+    active = {
+        left = {{'mode', 'paste', 'gitbranch'}, {'readonly', 'filename', 'modified'}}
+    },
+    component_function = {
+        gitbranch = 'FugitiveHead'
+    }
+    -- in lua, the above line is syntactic sugar for: 
     -- ['colorscheme'] = 'catppuccin'
     -- this may be helpful if the option name has a reserved symbol in it like + or -
     -- ['key-here'] = 'value'

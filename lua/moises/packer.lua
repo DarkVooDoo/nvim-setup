@@ -29,7 +29,9 @@ return require('packer').startup(function(use)
 	  }
   }
 
+  use 'tpope/vim-fugitive'
+
   use 'itchyny/lightline.vim'
-  use 'airblade/vim-gitgutter'
   use 'craftzdog/solarized-osaka.nvim'
+  use ('nvim-treesitter/nvim-treesitter', {run =  ':TSUpdate'})
 end)
