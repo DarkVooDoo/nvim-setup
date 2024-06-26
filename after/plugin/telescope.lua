@@ -34,7 +34,8 @@ end
 }
 end
 
-vim.keymap.set("n", "<C-a>", "<Cmd>bnext<Cr>")
+vim.keymap.set("n", "<C-a>", "<Cmd>bprevious<Cr>")
+vim.keymap.set("n", "<C-z>", "<Cmd>bnext<Cr>")
 vim.keymap.set('n', '<leader>fb', buffer_searcher, {})
 vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
 vim.keymap.set("n", "<leader>ps", function()
